@@ -18,6 +18,10 @@ namespace SmartHotel360.PublicWeb.Services
             LocalSettings = localSettings;
         }
 
+        public SettingsService(ServerSettings ss)
+        {
+        }
+
         public static SettingsService Load(LocalSettings localSettings)
         {
             using (var client = new HttpClient())
